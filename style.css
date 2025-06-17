@@ -1,4 +1,39 @@
+.{
+font-family:Arial, Helvetica, sans-serif;
+}
+
+
 h1{
 color:#f20a0a;
 
 }
+
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.navbar { grid-area: 1 / 1 / 2 / 6;
+ text-align:center;
+ font-size:200%;
+ margin:0%;
+ padding:0%;}
+
+.leftSide { grid-area: 2 / 1 / 6 / 2;
+  margin:0%;
+ padding:0%;}
+
+.mainBody { grid-area: 2 / 2 / 5 / 5;
+  margin:0%;
+ padding:0%;}
+
+.rightSide { grid-area: 2 / 5 / 6 / 6;
+  margin:0%;
+ padding:0%;}
+
+.footer { grid-area: 5 / 2 / 6 / 5;
+  margin:0%;
+ padding:0%;}
